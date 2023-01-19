@@ -72,11 +72,11 @@ void cat(char **param, char *filename, int o_c) {
     if ((arrFind("-b", param, o_c)) ||
         (arrFind("--number-nonblank", param, o_c))) {
       if (isSpaceStr(lines[i])) {
-        printf("%6d\t", ++nonEmptyC);
+        printf("     %d\t", ++nonEmptyC);
       }
     } else if ((arrFind("-n", param, o_c)) ||
                (arrFind("--number", param, o_c))) {
-      printf("%6d\t", i + 1);
+      printf("     %d\t", i + 1);
     }
     if ((arrFind("-s", param, o_c)) ||
         (arrFind("--squeeze-blank", param, o_c))) {
