@@ -30,11 +30,8 @@ void findParts(char *line, char **template, int t_c);
 
 // -h: output matching lines without preceding them by file names +
 // -s: suppress error messages about nonexistent files +
-// -f file: take regexes from file
+// -f file: take regexes from file +
 // -o: output matched parts of a matching line +
-
-// TO FIX:
-// multiple files don't show
 
 int main(int argc, char *argv[]) {
   if (argc < 3) {
